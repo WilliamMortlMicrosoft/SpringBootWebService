@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class InventoryController {
 
     @RequestMapping("/inventory")
-    public Inventory greeting(@RequestParam(value="category", defaultValue="phones") String category) {
+    public Inventory inventory(@RequestParam(value="category", defaultValue="phones") String category) {
         
     	// stubbed data, this is where we would do a database lookup
     	InventoryItem[] items = new InventoryItem[3];
