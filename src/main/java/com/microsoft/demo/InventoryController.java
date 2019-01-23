@@ -1,11 +1,17 @@
 package com.microsoft.demo;
 
+import javax.annotation.PostConstruct;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class InventoryController {
+
+    // called after construction, used for initialization
+    @PostConstruct
+    public void initialize() {
+    }
 
     @RequestMapping("/inventory")
     public Inventory inventory(@RequestParam(value="category", defaultValue="phones") String category) {
