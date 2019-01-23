@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "e2ab558e-baad-49e0-a2c0-a540af685013",
+		"name": "Spring Boot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Greeting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/greeting?name=InsertNameHere",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"greeting"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "InsertNameHere"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inventory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/inventory",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Roster",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"city\": \"Chicago\",\n\t\"nickname\": \"Cubs\",\n\t\"roster\": [\n\t\t{\n\t\t\t\"name\": \"Greg Maddux\",\n\t\t\t\"position\": \"Pitcher\",\n\t\t\t\"battingAverage\": 0.210\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Ryne Sandberg\",\n\t\t\t\"position\": \"2B\",\n\t\t\t\"battingAverage\": 0.279\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Javier Baez\",\n\t\t\t\"position\": \"SS\",\n\t\t\t\"battingAverage\": 0.312\n\t\t}\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/roster",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"roster"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
